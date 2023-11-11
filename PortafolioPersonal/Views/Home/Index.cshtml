@@ -1,0 +1,14 @@
+﻿
+@model PortafolioPersonal.Models.HomeIndex;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<partial name="_SectionHomes" model="Model.DatosPersona"/>
+<partial name="_SectionAbout" />
+<partial name="_SectionSkills" />
+<partial name="_SectionFormacion" />
+<partial name="_SectionProyectos" model="Model.Proyectos"/>
+<partial name="_SectionContacto" />
+

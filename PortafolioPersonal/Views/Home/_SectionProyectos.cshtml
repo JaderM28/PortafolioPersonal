@@ -1,0 +1,40 @@
+﻿@model IEnumerable<InformacionProyectos>
+
+<section class="proyectos" id="proyectos">
+    <h1 data-section="proyectos" data-value="title" data-aos="fade-up">Proyectos</h1>
+
+    <img src="./assets/puntos.png" alt="Decoración puntos" class="puntos1-proyectos">
+    <img src="./assets/puntos.png" alt="Decoración puntos" class="puntos2-proyectos">
+
+    <div class="cards_container--proyectos">
+
+        @foreach(var proyectos in @Model)
+        {
+            <div class="cards--proyectos card_JuegoAhorcado" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
+                <div class="container_imgCard--proyectos">
+                    <img src="@proyectos.ImagenURL" alt="Proyecto: Juego del ahorcado">
+                </div>
+
+                <div class="container_textCard--proyectos">
+                    <h2 data-section="proyectos" data-value="title-proyecto1">@proyectos.Titulo</h2>
+                    <p data-section="proyectos" data-value="info-proyecto1">@proyectos.Descripcion</p>
+                </div>
+
+                <div class="container_btn--proyectos">
+                    <a href="@proyectos.LinkDemo" target="_blank">
+                        <button class="btn_demo">
+                            <img src="./assets/icon-demoProyecto.png" alt="Demostración">DEMO
+                        </button>
+                    </a>
+
+                    <a href="@proyectos.LinkGitHub" target="_blank">
+                        <button class="btn_repo">
+                            <img src="./assets/icon-github.png" alt="Repositorio de github">REPO
+                        </button>
+                    </a>
+                </div>
+            </div>
+        }
+
+    </div>
+</section>

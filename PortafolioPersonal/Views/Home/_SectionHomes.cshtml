@@ -1,0 +1,45 @@
+﻿
+@model InformacionPersonal;
+
+<section class="home" id="home">
+    <picture class="container_image-home" data-aos="zoom-in">
+        <img class="image_home" src="assets/img-principal.jpg" alt="Img-Principal" />
+    </picture>
+    <div class="home_info">
+        <div class="container_text-info">
+            <p class="home_text-1" data-section="home" data_value="home_text-1">Hola! Soy</p>
+            <p class="home_text-2">@Model.Nombre</p>
+        </div>
+        <div>
+            <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">@Model.Estudio</p>
+        </div>
+
+        <div class="container_parrafo-info">
+            <p data-section="home" data-value="parrafo-info">¡Estudiante apasionado de Desarrollo de Software. Con formación técnica en el área, aplico conocimientos en proyectos y desafíos tecnológicos. Explora mi crecimiento profesional y descubre mis habilidades!</p>
+        </div>
+
+        <div class="container_button">
+            <a href="@Model.URL" target="_blank">
+                <button class="cv_button" data-section="home" data-value="cv_button">Descargar CV</button>
+            </a>
+            <a href="#contacto">
+                <button class="contact_button" data-section="home" data-value="contact_button">Contacto</button>
+            </a>
+            
+        </div>
+    </div>
+    <div class="links">
+        <a href="" target="_blank">
+            <img src="assets/icon-linkedin.png" alt="Linkedin" class="icon-linkedin" />
+        </a>
+        <a href="" target="_blank">
+            <img src="assets/icon-github.png" alt="GitHUB" class="icon-github" />
+        </a>
+        <a href="" target="_blank">
+            <img src="assets/icon-codepen.png" alt="CodePen" class="icon-CodePen" />
+        </a>
+        <a href="" target="_blank">
+            <img src="assets/icon-instagram.png" alt="Instagram" class="icon-instagram" />
+        </a>
+    </div>
+</section>
